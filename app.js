@@ -12,6 +12,9 @@ const app = express();
 const port = 3000;
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
+// Set the views directory path to an absolute path
+app.set("views", path.join(__dirname, "views"));
+
 // Set static files and view engine
 app.use(express.static(path.join(__dirname, "public")));
 app.set("view engine", "ejs");
