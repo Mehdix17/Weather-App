@@ -117,16 +117,38 @@ form button:hover {
 /* Responsive adjustments */
 @media (max-width: 600px) {
   .container {
-    padding: 25px;
+    padding: 30px; /* Adjust padding for smaller screens */
+    max-width: 95%; /* Allow it to take up more width */
+    border-radius: 10px; /* Slightly smaller border-radius */
   }
 
   h1 {
-    font-size: 2rem;
+    font-size: 2.2rem; /* Slightly smaller header */
+    margin-bottom: 25px;
   }
 
-  form input[type="text"],
-  form button,
+  .input-group {
+    margin-bottom: 15px; /* Adjust spacing */
+  }
+
+  .input-group input[type="text"],
+  .input-group button,
   .weather-box p {
     font-size: 1rem;
+  }
+
+  .weather-box {
+    padding: 25px; /* Adjust padding for weather box */
+    margin-top: 25px;
+    border-radius: 10px; /* Slightly smaller border-radius */
+  }
+
+  .weather-box h2 {
+    font-size: 1.8rem; /* Slightly smaller city name */
+    margin-bottom: 12px;
+  }
+
+  .weather-icon img {
+    width: 80px; /* Adjust icon size for smaller screens */
   }
 }
