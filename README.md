@@ -1,1 +1,1 @@
-A weather app using EJS, node.js and express.js
+A weather app using EJS, node.js, express.js and the OpenWeatherMap API 
